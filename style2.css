@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');/*font de sibtitulo*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');/*Font de titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*Font de corpo*/
+
+body{
+    margin:0;
+    min-width: 255px;
+}
+.titulo1{
+    font-family:'Merriweather';
+    font-size: 100px;
+    color:#17a2b8;
+}
+.titulo2{
+    font-family:'PT Sans';
+    font-size: 40px;
+    color:#17a2b8;
+}
+.corpo{
+    font-family: 'Roboto';
+    font-size: 25px;
+}
+
+#home{
+    width:100%;
+    height:1000px;
+    background-image: url(img/home.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+
+/*SOBRE INCLUSÃO*/
+#sobre_inclusao{
+    width:85%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sobre_inclusao_animation{
+    width:100%;
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+#sobre_inclusao_colunm1{
+    left:-100px;
+    width:85%;
+    flex-wrap: wrap;
+}
+#sobre_inclusao_colunm2{
+    left:-100px;
+    width:85%;
+    flex-wrap: wrap;
+}
+#sobre_inclusao_list{
+    list-style-type: none;
+}
+.animacao{
+    transition-timing-function: linear;
+    transform: translateX(80px);
+    transition-duration: 0.5s;
+}
+
+
+/*SEÇÃO DE DIAGNOSTICO*/
+#diagnostico{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.diagnostico_barra_titulo{
+    width: 100%;
+    background-color: lightgray;
+    /* margin: 20px; */
+    text-align: center;
+}
+#diagnostico_p1, #diagnostico_p2,  #diagnostico_p3{
+    width: 90%;
+    margin: 20px;
+}
+#diagnostico_p1::first-letter, #diagnostico_p2::first-letter,  #diagnostico_p3::first-letter{
+    font-size: 50px;
+    color:crimson;
+}
+#diagnostico_tipos_autismo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.tipos_autismo_banner{
+    width: 90%;
+    height: auto;
+    border:5px solid lightgray;
+    padding: 10px;
+    margin:40px;
+}
+.tipos_autismo_banner:hover{
+    border-color: #17a2b8;
+}
+.titulo2_tipos_autismo_banner{
+    font-family:'PT Sans';
+    font-size: 40px;
+    color:#17a2b8;
+}
+
+#diagnostico_sintomas_do_autismo{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+#diagnostico_sintomas_do_autismo_banners{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.diagnostico_sintomas_do_autismo_banner_unit{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    margin:30px;
+    border: 5px solid lightgray;
+}
+.diagnostico_sintomas_do_autismo_banner_info{
+    position: absolute;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    transition: height 1s ease;
+}
+.diagnostico_sintomas_do_autismo_banner_unit:hover  .diagnostico_sintomas_do_autismo_banner_info{
+    height: 300px;
+}
+
+/*SEÇÃO ACEITAÇÃO*/
+#aceitacao{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.aceitacao_texto{
+    font-family: 'Roboto';
+    font-size: 25px;
+    width:80%;
+    /* margin: 30px;  */
+}
+.aceitacao_texto::first-letter{
+    font-size: 50px;
+    color: orangered;
+}
+
+
+
+#mitos_estigmas{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner_mitos{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-top: 20px;
+}
+.banner_mitos_2{
+    display: flex; 
+    flex-direction: column; 
+    margin: 15px; 
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.banner_mitos_3{
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+}
+.mitos_texto{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/**/
+.seta {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid darkmagenta;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    margin: 20px;
+}
+.seta.girada {
+    transform: rotate(180deg);
+}
+.mitos_texto{
+    display: none;
+}
+.mitos_texto_mostrar{
+    display: flex;
+}
+
+
+
+
+#pesquisa_desenvolvimento{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pesquisa_desenvolvimento_texto{
+    font-family: 'Roboto';
+    font-size: 25px;
+    margin: 30px;
+}
+#paragrafo1::first-letter{
+    font-size: 50px;
+    color:darkred;
+}
+
+#campanha{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#campanha_instagram{
+    margin:30px;
+}
+#campanha_instagram::first-letter{
+    font-size: 50px;
+    color:darkblue;
+}
+/*RODAPE -----------------------------------------------------------------------------------------------------*/
+#rodape{
+    background-color: lightgray;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#rodape p{
+    margin: 20px;
+}
+
+/* Telas muito muito pequenas */
+@media(max-width:500px){
+    #logo{
+        display:none;
+    }
+    #showMenu, #hideMenu {
+        display: flex;
+        position: relative;
+        width: auto;
+        padding: 20px;
+        background-color: transparent;
+        color:black;
+        font-family: 'SB Heading';
+        font-size:15px;
+        border:none;
+        border-radius: 5px;
+        z-index: 2;
+        cursor: pointer;
+      }
+      
+      #nav {
+        position: fixed;
+        top: 0px;
+        left: -255px; /*joga ele para trás, para fora da tela, mais ele ainda está lá*/
+        bottom: 0px;
+        width: 250px;  
+        height: auto;
+        background-color: white;
+        box-shadow: 0px 0px 10px black;
+        transition: left 0.5s linear;
+        z-index: 2;
+      }
+      
+      #nav.show {
+        left: 0px;/*joga ele para frente, onde o usuário consegue ver */
+      }
+      #nav_list{
+        display: flex;
+        flex-direction: column;
+        flex-flow:nowrap;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        align-items:center;
+        align-content:center;
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .nav_item{
+        text-decoration: none;
+        color:black;
+        margin: 10px;
+        font-family: 'PT Sans';
+        cursor: pointer;
+        font-size: 19px;
+      }
+      .op_Nshow{
+        display:none;
+      }
+      .op_show{
+        display:block;
+        background-color:#343a40;
+        padding: 15px;
+        border-radius: 5px;
+        border:none;
+        transition: left 0.5s linear;
+      }
+      #nav_home:hover{
+        color:#17a2b8;
+      }
+      #nav_sobre_inclusao:hover{
+        color:#fecd23;
+      }
+      #nav_diagnostico:hover{
+        color:crimson;
+      }
+      #nav_aceitacao:hover{
+        color: orangered;
+      }
+      #nav_mitos:hover{
+        color:darkmagenta;
+      }
+      #nav_pesquisa:hover{
+        color:darkred;
+      }
+      #nav_campanha:hover{
+        color:darkblue;
+      }
+
+      .menu_divisor{
+        width:100%;
+    }
+    #home {
+        background-size: cover;
+        padding: 0;
+    }
+    .titulo1{
+        font-size: 50px;
+    }
+    .titulo2{
+        font-size: 30px;
+    }
+    .corpo{
+        font-size:20px;
+    }
+    .diagnostico_barra_titulo{
+        font-size: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Dispositivos com tela pequena, como smartphones ------------------------------------------------------ */
+@media (min-width: 501px) and (max-width: 578px){
+    /* Adicione aqui as regras de estilo que deseja aplicar em dispositivos móveis */
+    #logo{
+        display:none;
+    }
+    #showMenu, #hideMenu {
+        display: flex;
+        position: relative;
+        width: auto;
+        padding: 20px;
+        background-color: transparent;
+        color:black;
+        font-family: 'SB Heading';
+        font-size:15px;
+        border:none;
+        border-radius: 5px;
+        z-index: 2;
+        cursor: pointer;
+      }
+      
+      #nav {
+        position: fixed;
+        top: 0px;
+        left: -255px; /*joga ele para trás, para fora da tela, mais ele ainda está lá*/
+        bottom: 0px;
+        width: 250px;  
+        height: auto;
+        background-color: white;
+        box-shadow: 0px 0px 10px black;
+        transition: left 0.5s linear;
+        z-index: 2;
+      }
+      
+      #nav.show {
+        left: 0px;/*joga ele para frente, onde o usuário consegue ver */
+      }
+      #nav_list{
+        display: flex;
+        flex-direction: column;
+        flex-flow:nowrap;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        align-items:center;
+        align-content:center;
+        list-style-type: none;
+        padding: 0%;
+      }
+      
+      .nav_item{
+        text-decoration: none;
+        color:black;
+        margin: 10px;
+        font-family: 'PT Sans';
+        cursor: pointer;
+        font-size: 19px;
+      }
+      .op_Nshow{
+        display:none;
+      }
+      .op_show{
+        display:block;
+        background-color:#343a40;
+        padding: 15px;
+        border-radius: 5px;
+        border:none;
+        transition: left 0.5s linear;
+      }
+      #nav_home:hover{
+        color:#17a2b8;
+      }
+      #nav_sobre_inclusao:hover{
+        color:#fecd23;
+      }
+      #nav_diagnostico:hover{
+        color:crimson;
+      }
+      #nav_aceitacao:hover{
+        color: orangered;
+      }
+      #nav_mitos:hover{
+        color:darkmagenta;
+      }
+      #nav_pesquisa:hover{
+        color:darkred;
+      }
+      #nav_campanha:hover{
+        color:darkblue;
+      }
+
+      .menu_divisor{
+        width:100%;
+    }
+    #home {
+        background-size: cover;
+        padding: 0;
+    }
+    .titulo1{
+        font-size: 50px;
+    }
+    .titulo2{
+        font-size: 30px;
+    }
+    .corpo{
+        font-size:20px;
+    }
+    .diagnostico_barra_titulo{
+        font-size: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+  
+  /* Dispositivos com tela média, como tablets -----------------------------------------------------*/
+@media (min-width: 577px) and (max-width: 1300px) {
+    /* Adicione aqui as regras de estilo que deseja aplicar em tablets */
+    #logo{
+        display:none;
+    }
+    #showMenu, #hideMenu {
+        display: flex;
+        position: relative;
+        width: auto;
+        padding: 20px;
+        background-color: transparent;
+        color:black;
+        font-family: 'SB Heading';
+        font-size:15px;
+        border:none;
+        border-radius: 5px;
+        z-index: 2;
+        cursor: pointer;
+      }
+      
+      #nav {
+        position: fixed;
+        top: 0px;
+        left: -255px; /*joga ele para trás, para fora da tela, mais ele ainda está lá*/
+        bottom: 0px;
+        width: 250px;  
+        height: auto;
+        background-color: white;
+        box-shadow: 0px 0px 10px black;
+        transition: left 0.5s linear;
+        z-index: 2;
+      }
+      
+      #nav.show {
+        left: 0px;/*joga ele para frente, onde o usuário consegue ver */
+      }
+      #nav_list{
+        display: flex;
+        flex-direction: column;
+        flex-flow:nowrap;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        align-items:center;
+        align-content:center;
+        list-style-type: none;
+        padding: 0%;
+      }
+      
+      .nav_item{
+        text-decoration: none;
+        color:black;
+        margin: 10px;
+        font-family: 'PT Sans';
+        cursor: pointer;
+        font-size: 19px;
+      }
+      .op_Nshow{
+        display:none;
+      }
+      .op_show{
+        display:block;
+        background-color:#343a40;
+        padding: 15px;
+        border-radius: 5px;
+        border:none;
+        transition: left 0.5s linear;
+      }
+      #nav_home:hover{
+        color:#17a2b8;
+      }
+      #nav_sobre_inclusao:hover{
+        color:#fecd23;
+      }
+      #nav_diagnostico:hover{
+        color:crimson;
+      }
+      #nav_aceitacao:hover{
+        color: orangered;
+      }
+      #nav_mitos:hover{
+        color:darkmagenta;
+      }
+      #nav_pesquisa:hover{
+        color:darkred;
+      }
+      #nav_campanha:hover{
+        color:darkblue;
+      }
+
+      .menu_divisor{
+        width:100%;
+    }
+    #home {
+        background-size: cover;
+        padding: 0;
+    }
+    .titulo1{
+        font-size: 50px;
+    }
+    .titulo2{
+        font-size: 30px;
+    }
+    .corpo{
+        font-size:20px;
+    }
+    .diagnostico_barra_titulo{
+        font-size: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+  /* Dispositivos com tela grande, como desktops ---------------------------------------------------*/
+  @media (min-width: 1301px) {
+    /* Adicione aqui as regras de estilo que deseja aplicar em desktops */
+    #nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position:fixed;
+        width:100%;
+        background-color: black;
+        z-index: 2;
+    }
+    .menu_divisor, #showMenu, #hideMenu{
+        display: none;
+    }
+    #nav_list{
+        display: flex;
+        flex-direction: row;
+        flex-flow:nowrap;
+        flex-wrap: wrap;
+        justify-content:flex-end;
+        align-items:flex-end;
+        align-content:center;
+        list-style-type: none;
+        padding: 0;
+        opacity: 30;
+    }
+    .nav_item{
+        text-decoration: none;
+        color: lightgray;
+        margin: 15px;
+        font-size: 20px;
+        font-family: 'PT Sans';
+    }
+
+    #nav_home:hover{
+        color:#17a2b8;
+      }
+      #nav_sobre_inclusao:hover{
+        color:#fecd23;
+      }
+      #nav_diagnostico:hover{
+        color:crimson;
+      }
+      #nav_aceitacao:hover{
+        color: orangered;
+      }
+      #nav_mitos:hover{
+        color:darkmagenta;
+      }
+      #nav_pesquisa:hover{
+        color:darkred;
+      }
+      #nav_campanha:hover{
+        color:darkblue;
+      }
+
+    #logo{
+        display:flex; 
+        flex-direction: row;
+    }
+    #home {
+        background-size: 100% 100%;
+        padding: 0;
+    }
+  }
