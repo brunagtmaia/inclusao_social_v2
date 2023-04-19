@@ -417,10 +417,14 @@ body{
         font-size:20px;
     }
     .diagnostico_barra_titulo{
-        font-size: 42px;
+        font-size: 40px;
         margin-top: 30px;
         margin-bottom: 30px;
         overflow: hidden;
+        text-align: center;
+    }
+    #titulo_g{
+      font-size: 40px;
     }
 }
 
