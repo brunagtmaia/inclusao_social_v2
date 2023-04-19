@@ -12,7 +12,9 @@
     <body>
         <div class="menu_todo">
             <div id="conteudo">
-                <button id="showMenu" type="button" value="Exibir Menu" style="position: fixed;"><img src="img/menu.png" width="50px" height="50px"></button>
+                <button id="showMenu" class="bt_nav" type="button" style="position: fixed; color:black">Menu 
+                    <span ><img src="img/icon_seta_direita.png" width="25px" height="25px" style="margin:0;"></span>
+                </button>
             </div>
             <!--Menu fixo na parte de cima-->
             <nav id="nav" class="active">
@@ -22,7 +24,9 @@
                 </div>
 
                 <div id="nav_menu_fechar" style="display: flex; flex-direction: row; justify-content: flex-end;">
-                    <button id="hideMenu" type="button" value="Ocultar Menu"><img src="img/fechar_menu.png" width="30px" height="30px" style="text-align: left;"></button>
+                    <button id="hideMenu" class="bt_nav" type="button" style="position: fixed; color:black">Menu 
+                        <span ><img src="img/icon_seta_esquerda.png" width="25px" height="25px" style="margin:0;"></span>
+                    </button>
                 </div>
                 <ul id="nav_list">
                     <li><a class="nav_item" id="nav_home" href="#home">Home</a></li>

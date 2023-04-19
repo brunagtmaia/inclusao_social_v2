@@ -309,16 +309,20 @@ body{
     #showMenu, #hideMenu {
         display: flex;
         position: relative;
+        justify-content: center;
+        align-items: center;
         width: auto;
-        padding: 20px;
+        padding: 5px;
         background-color: transparent;
         color:black;
-        font-family: 'SB Heading';
-        font-size:15px;
+        font-family: 'PT Sans';
+        font-size:18px;
         border:none;
         border-radius: 5px;
         z-index: 2;
         cursor: pointer;
+        background-color: white;
+        border-radius: 90px;
       }
       
       #nav {
@@ -435,19 +439,24 @@ body{
         display:none;
     }
     #showMenu, #hideMenu {
-        display: flex;
-        position: relative;
-        width: auto;
-        padding: 20px;
-        background-color: transparent;
-        color:black;
-        font-family: 'SB Heading';
-        font-size:15px;
-        border:none;
-        border-radius: 5px;
-        z-index: 2;
-        cursor: pointer;
-      }
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      padding: 5px;
+      background-color: transparent;
+      color:black;
+      font-family: 'PT Sans';
+      font-size:18px;
+      border:none;
+      border-radius: 5px;
+      z-index: 2;
+      cursor: pointer;
+      background-color: white;
+      border-radius: 90px;
+    }
+    
       
       #nav {
         position: fixed;
@@ -521,10 +530,20 @@ body{
       .menu_divisor{
         width:100%;
     }
-    #home {
-        background-size: cover;
-        padding: 0;
-    }
+    #home{
+      width:100%;
+      height:auto;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+      margin:0;
+  }
     .titulo1{
         font-size: 50px;
     }
@@ -550,19 +569,23 @@ body{
         display:none;
     }
     #showMenu, #hideMenu {
-        display: flex;
-        position: relative;
-        width: auto;
-        padding: 20px;
-        background-color: transparent;
-        color:black;
-        font-family: 'SB Heading';
-        font-size:15px;
-        border:none;
-        border-radius: 5px;
-        z-index: 2;
-        cursor: pointer;
-      }
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      padding: 5px;
+      background-color: transparent;
+      color:black;
+      font-family: 'PT Sans';
+      font-size:18px;
+      border:none;
+      border-radius: 5px;
+      z-index: 2;
+      cursor: pointer;
+      background-color: white;
+      border-radius: 90px;
+    }
       
       #nav {
         position: fixed;
@@ -636,10 +659,20 @@ body{
       .menu_divisor{
         width:100%;
     }
-    #home {
-        background-size: cover;
-        padding: 0;
-    }
+    #home{
+      width:100%;
+      height:auto;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+      margin:0;
+  }
     .titulo1{
         font-size: 50px;
     }
